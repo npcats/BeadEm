@@ -253,7 +253,9 @@
               Heb je een vraag over een sieraad, bestelling of workshop? Stuur gerust een bericht.
             </p>
             <p>
-              <a href="mailto:beadem26@gmail.com">E-mail: beadem26@gmail.com</a>
+              <a href="https://wa.me/31612345678" target="_blank" rel="noopener">
+                WhatsApp: 06 12345678
+              </a>
             </p>
             <p>
               <a
@@ -266,10 +268,11 @@
             </p>
           </div>
 
-          <form onsubmit="sendMail(event)">
-            <input required id="name" placeholder="Naam">
-            <input required id="email" type="email" placeholder="E-mailadres">
-            <textarea required id="message" rows="5" placeholder="Bericht"></textarea>
+          <form id="contactForm" action="https://formspree.io/f/maeepgvb" method="POST">
+            <input required id="name" name="naam" placeholder="Naam">
+            <input required id="email" name="email" type="email" placeholder="E-mailadres">
+            <textarea required id="message" name="message" rows="5" placeholder="Bericht"></textarea>
+            <input type="hidden" name="_subject" value="Vraag via website">
             <button class="btn" type="submit">Verstuur bericht</button>
             <p id="msg" class="small"></p>
           </form>
