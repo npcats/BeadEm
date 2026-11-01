@@ -1,4 +1,4 @@
-const categories=document.getElementById('categories');const earrings=document.getElementById('earrings');const triangle=document.getElementById('triangle');
+js/script.js,const categories=document.getElementById('categories');const earrings=document.getElementById('earrings');const triangle=document.getElementById('triangle');
 function showCategories(){categories.classList.remove('hidden');earrings.classList.add('hidden');triangle.classList.add('hidden');document.getElementById('shop').scrollIntoView()}
 function showEarrings(){categories.classList.add('hidden');earrings.classList.remove('hidden');triangle.classList.add('hidden');document.getElementById('shop').scrollIntoView()}
 function showTriangleTwist(){categories.classList.add('hidden');earrings.classList.add('hidden');triangle.classList.remove('hidden');document.getElementById('shop').scrollIntoView()}
