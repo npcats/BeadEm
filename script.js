@@ -1,0 +1,6 @@
+const categories=document.getElementById('categories');const earrings=document.getElementById('earrings');const triangle=document.getElementById('triangle');
+function showCategories(){categories.classList.remove('hidden');earrings.classList.add('hidden');triangle.classList.add('hidden');document.getElementById('shop').scrollIntoView()}
+function showEarrings(){categories.classList.add('hidden');earrings.classList.remove('hidden');triangle.classList.add('hidden');document.getElementById('shop').scrollIntoView()}
+function showTriangleTwist(){categories.classList.add('hidden');earrings.classList.add('hidden');triangle.classList.remove('hidden');document.getElementById('shop').scrollIntoView()}
+function sendMail(e){e.preventDefault();const n=document.getElementById('name').value;const f=document.getElementById('email').value;const m=document.getElementById('message').value;location.href='mailto:beadem26@gmail.com?subject='+encodeURIComponent('Bericht via Bead em website van '+n)+'&body='+encodeURIComponent('Naam: '+n+'\nE-mail: '+f+'\n\n'+m);document.getElementById('msg').textContent='Je e-mailprogramma wordt geopend.'}
+document.getElementById('year').textContent=new Date().getFullYear();
