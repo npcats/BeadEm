@@ -34,23 +34,38 @@ function showTriangleTwist() {
   });
 }
 
-function sendMail(event) {
-  event.preventDefault();
+const contactForm = document.getElementById('contactForm');
+const msg = document.getElementById('msg');
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
+if (contactForm) {
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-  if (!name || !email || !message) {
-    return;
-  }
+    if (!msg) return;
 
-  const subject = encodeURIComponent('Vraag via website');
-  const body = encodeURIComponent(
-    `Naam: ${name}\nE-mail: ${email}\n\nBericht:\n${message}`
-  );
+    msg.textContent = 'Versturen...';
 
-  location.href = `mailto:beadem26@gmail.com?subject=${subject}&body=${body}`;
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+        msg.textContent = 'Je bericht is verzonden! Ik neem zo snel mogelijk contact met je op.';
+      } else {
+        throw new Error('Formspree submission failed');
+      }
+    } catch (error) {
+      msg.textContent = 'Er ging iets mis. Probeer het later opnieuw of neem contact op via WhatsApp.';
+    }
+  });
 }
 
 document.getElementById('year').textContent = new Date().getFullYear();
