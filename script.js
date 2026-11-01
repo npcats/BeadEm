@@ -1,3 +1,5 @@
+js/script.js
+  
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const shopSections = ['categories', 'earrings', 'triangle'];
