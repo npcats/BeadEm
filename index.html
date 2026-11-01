@@ -1,29 +1,288 @@
 <!doctype html>
 <html lang="nl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Bead 'em | Handgemaakte sieraden</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><nav><a class="brand" href="#home">BEAD 'EM</a><button class="menu btn" onclick="document.querySelector('.links').classList.toggle('open')">Menu</button><div class="links"><a href="#home">Home</a><a href="#workshops">Workshops</a><a href="#shop">Shop</a><a href="#over">Over mij</a><a href="#contact">Contact</a><a href="#service">Klantenservice</a></div></nav></header>
-<main>
-<section class="hero" id="home"><div><div class="eyebrow">Met liefde gemaakt • kraal voor kraal</div><h1>Handgemaakte sieraden</h1><p>Bijzondere sieraden van hoogwaardige kralen, zorgvuldig met de hand gemaakt. Warm, stijlvol en met een eigen karakter.</p><a class="btn" href="#shop">Ontdek de collectie</a><a class="btn alt" href="#workshops">Bekijk workshops</a></div></section>
-<section class="intro"><div class="eyebrow">Bead 'em</div><h2>Sieraden met aandacht</h2><p>Een plek voor liefhebbers van kleur, verfijnde details en handwerk. Iedere creatie ontstaat met aandacht voor materiaal, combinatie en afwerking.</p></section>
-<section id="shop"><div id="categories"><div class="eyebrow">Collectie</div><h2>Shop</h2><div class="grid"><article class="card category" onclick="showEarrings()"><div class="bead"></div><h3>Oorbellen</h3><p>Handgemaakte oorbellen waarin kleur, vorm en fijne kralen samenkomen.</p><p><strong>Bekijk categorieën →</strong></p></article><article class="card"><div class="bead"></div><h3>Armbanden</h3><p>Verfijnde combinaties voor iedere dag of een bijzondere gelegenheid.</p></article><article class="card"><div class="bead"></div><h3>Unieke items</h3><p>Kleine series en bijzondere ontwerpen. Geen massaproductie, maar handwerk.</p></article></div></div>
-<div id="earrings" class="hidden"><button class="btn alt back" onclick="showCategories()">← Terug naar Shop</button><div class="eyebrow">Oorbellen</div><h2>Collecties</h2><div class="grid"><article class="card category" onclick="showTriangleTwist()"><img class="product-photo" src="images/DH-1.jpg" alt="Triangle Twist oorbellen"><h3>Triangle Twist</h3><p>Bekijk alle Triangle Twist oorbellen.</p><p><strong>Bekijk collectie →</strong></p></article></div></div>
-<div id="triangle" class="hidden"><button class="btn alt back" onclick="showEarrings()">← Terug naar Oorbellen</button><div class="eyebrow">Oorbellen • collectie</div><h2>Triangle Twist</h2><p>Handgemaakte Triangle Twist oorbellen van hoogwaardige Miyuki kralen.</p><div class="sales-info"><strong>Prijs: € 22,50 per paar</strong><br>Verkrijgbaar bij Leeratelier, Meelstraat 21, 4301 EA Zierikzee, of stuur een bericht via <a href="#contact">Contact</a>.</div><div class="grid products">
-<article class="card"><img class="product-photo" src="images/DH-1.jpg" alt="Triangle Twist oorbellen 1"><h3>Triangle Twist 01</h3><p class="price">€ 22,50</p><p>Handgemaakt met hoogwaardige Miyuki kralen.</p></article>
-<article class="card"><img class="product-photo" src="images/DH-2.jpg" alt="Triangle Twist oorbellen 2"><h3>Triangle Twist 02</h3><p class="price">€ 22,50</p><p>Handgemaakt met hoogwaardige Miyuki kralen.</p></article>
-<article class="card"><img class="product-photo" src="images/DH-3.jpg" alt="Triangle Twist oorbellen 3"><h3>Triangle Twist 03</h3><p class="price">€ 22,50</p><p>Handgemaakt met hoogwaardige Miyuki kralen.</p></article>
-<article class="card"><img class="product-photo" src="images/DH-4.jpg" alt="Triangle Twist oorbellen 4"><h3>Triangle Twist 04</h3><p class="price">€ 22,50</p><p>Handgemaakt met hoogwaardige Miyuki kralen.</p></article>
-<article class="card"><img class="product-photo" src="images/DH-5.jpg" alt="Triangle Twist oorbellen 5"><h3>Triangle Twist 05</h3><p class="price">€ 22,50</p><p>Handgemaakt met hoogwaardige Miyuki kralen.</p></article>
-<article class="card"><img class="product-photo" src="images/DH-6.jpg" alt="Triangle Twist oorbellen 6"><h3>Triangle Twist 06</h3><p class="price">€ 22,50</p><p>Handgemaakt met hoogwaardige Miyuki kralen.</p></article>
-<article class="card"><img class="product-photo" src="images/DH-7.jpg" alt="Triangle Twist oorbellen 7"><h3>Triangle Twist 07</h3><p class="price">€ 22,50</p><p>Handgemaakt met hoogwaardige Miyuki kralen.</p></article>
-</div></div></section>
-<div class="band"><div class="inner" id="workshops"><div><div class="eyebrow">Creatief & gezellig</div><h2>Workshops</h2><p>Ontdek hoe leuk het is om zelf met hoogwaardige kralen te werken. Tijdens een workshop leer je stap voor stap technieken waarmee je jouw eigen sieraad maakt.</p><a class="btn gold" href="#contact">Informeer naar een workshop</a></div><div><h3>Wat kun je verwachten?</h3><p>Een ontspannen workshop in een kleine setting, duidelijke uitleg en mooie materialen.</p></div></div></div>
-<section id="over"><div class="eyebrow">Het verhaal</div><h2>Over mij</h2><div class="contact"><p>Welkom bij Bead 'em. Vanuit liefde voor kralen, kleuren en handwerk ontstaan sieraden die net even anders zijn.</p><div class="card"><h3>Volg Bead 'em</h3><p>Bekijk nieuwe ontwerpen, inspiratie en creaties via Instagram.</p><a class="btn" href="https://www.instagram.com/bead_em_handgemaakte_sieraden/" target="_blank" rel="noopener">Naar Instagram</a></div></div></section>
-<section class="service" id="service"><div class="eyebrow">Klantenservice</div><h2>Veelgestelde vragen</h2><details><summary>Gebruikte materialen</summary><details><summary>Wat zijn Miyuki kralen?</summary><p>Miyuki kralen zijn hoogkwalitatieve glaskralen die speciaal zijn ontworpen voor het vervaardigen van sieraden. Ze worden geproduceerd door het Japanse merk Miyuki en zijn bekend om hun uniforme vorm, precisie en glans. De kralen zijn beschikbaar in een breed spectrum van kleuren en patronen en worden vaak gebruikt in technieken zoals bead embroidery, stringing en macramé.</p></details></details></section>
-<section id="contact"><div class="eyebrow">Neem contact op</div><h2>Contact</h2><div class="contact"><div><p>Heb je een vraag over een sieraad, bestelling of workshop? Stuur gerust een bericht.</p><p><a href="mailto:beadem26@gmail.com">E-mail: beadem26@gmail.com</a></p><p><a href="https://www.instagram.com/bead_em_handgemaakte_sieraden/" target="_blank" rel="noopener">Instagram: @bead_em_handgemaakte_sieraden</a></p></div><form onsubmit="sendMail(event)"><input required id="name" placeholder="Naam"><input required id="email" type="email" placeholder="E-mailadres"><textarea required id="message" rows="5" placeholder="Bericht"></textarea><button class="btn" type="submit">Verstuur bericht</button><p id="msg" class="small"></p></form></div></section>
-</main><footer class="footer"><strong>BEAD 'EM</strong><p class="small">Handgemaakte sieraden • Met aandacht gemaakt</p><p class="small">© <span id="year"></span> Bead 'em</p></footer><script src="js/script.js"></script></body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bead 'em | Handgemaakte sieraden</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="brand" href="#home">BEAD 'EM</a>
+
+        <button
+          class="menu btn"
+          onclick="document.querySelector('.links').classList.toggle('open')"
+        >
+          Menu
+        </button>
+
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#workshops">Workshops</a>
+          <a href="#shop">Shop</a>
+          <a href="#over">Over mij</a>
+          <a href="#contact">Contact</a>
+          <a href="#service">Klantenservice</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <div class="eyebrow">Met liefde gemaakt • kraal voor kraal</div>
+          <h1>Handgemaakte sieraden</h1>
+
+          <p>
+            Bijzondere sieraden van hoogwaardige kralen, zorgvuldig met de hand gemaakt.
+            Warm, stijlvol en met een eigen karakter.
+          </p>
+
+          <a class="btn" href="#shop">Ontdek de collectie</a>
+          <a class="btn alt" href="#workshops">Bekijk workshops</a>
+        </div>
+      </section>
+
+      <section class="intro">
+        <div class="eyebrow">Bead 'em</div>
+        <h2>Sieraden met aandacht</h2>
+
+        <p>
+          Een plek voor liefhebbers van kleur, verfijnde details en handwerk.
+          Iedere creatie ontstaat met aandacht voor materiaal, combinatie en uitstraling.
+        </p>
+      </section>
+
+      <section id="shop">
+        <div id="categories">
+          <div class="eyebrow">Collectie</div>
+          <h2>Shop</h2>
+
+          <div class="grid">
+            <article class="card category" onclick="showEarrings()">
+              <div class="bead"></div>
+              <h3>Oorbellen</h3>
+              <p>
+                Handgemaakte oorbellen waarin kleur, vorm en elegantie samenkomen.
+              </p>
+              <p><strong>Bekijk categorie</strong></p>
+            </article>
+
+            <article class="card">
+              <div class="bead"></div>
+              <h3>Armbanden</h3>
+              <p>Verfijnde combinaties voor iedere dag en elke gelegenheid.</p>
+            </article>
+
+            <article class="card">
+              <div class="bead"></div>
+              <h3>Uniek items</h3>
+              <p>Kleine series en bijzondere ontwerpen voor handwerkfans.</p>
+            </article>
+          </div>
+        </div>
+
+        <div id="earrings" class="hidden">
+          <button class="btn alt back" onclick="showCategories()">
+            ← Terug naar Shop
+          </button>
+
+          <div class="eyebrow">Oorbellen</div>
+          <h2>Collecties</h2>
+
+          <div class="grid">
+            <article class="card category" onclick="showTriangleTwist()">
+              <img
+                class="product-photo"
+                src="images/DH-1.jpg"
+                alt="Triangle Twist oorbellen"
+              >
+              <h3>Triangle Twist</h3>
+              <p>Bekijk alle Triangle Twist oorbellen.</p>
+              <p><strong>Bekijk collectie</strong></p>
+            </article>
+          </div>
+        </div>
+
+        <div id="triangle" class="hidden">
+          <button class="btn alt back" onclick="showEarrings()">
+            ← Terug naar Oorbellen
+          </button>
+
+          <div class="eyebrow">Oorbellen • collectie</div>
+          <h2>Triangle Twist</h2>
+
+          <p>
+            Handgemaakte Triangle Twist oorbellen van hoogwaardige Miyuki kralen.
+          </p>
+
+          <div class="sales-info">
+            <strong>Prijs: € 22,50 per paar</strong><br>
+            <span>
+              Verkrijgbaar bij Leerdam, Meelstraat 21, 4331 EA Zierikzee, of stuur een bericht via
+              <a href="#contact">Contact</a>.
+            </span>
+          </div>
+
+          <div class="grid products">
+            <article class="card">
+              <img class="product-photo" src="images/DH-1.jpg" alt="Triangle Twist oorbellen 1">
+              <h3>Triangle Twist 01</h3>
+              <p class="price">€ 22,50</p>
+              <p>Handgemaakt met hoogwaardige Miyuki kralen.</p>
+            </article>
+
+            <article class="card">
+              <img class="product-photo" src="images/DH-2.jpg" alt="Triangle Twist oorbellen 2">
+              <h3>Triangle Twist 02</h3>
+              <p class="price">€ 22,50</p>
+              <p>Handgemaakt met hoogwaardige Miyuki kralen.</p>
+            </article>
+
+            <article class="card">
+              <img class="product-photo" src="images/DH-3.jpg" alt="Triangle Twist oorbellen 3">
+              <h3>Triangle Twist 03</h3>
+              <p class="price">€ 22,50</p>
+              <p>Handgemaakt met hoogwaardige Miyuki kralen.</p>
+            </article>
+
+            <article class="card">
+              <img class="product-photo" src="images/DH-4.jpg" alt="Triangle Twist oorbellen 4">
+              <h3>Triangle Twist 04</h3>
+              <p class="price">€ 22,50</p>
+              <p>Handgemaakt met hoogwaardige Miyuki kralen.</p>
+            </article>
+
+            <article class="card">
+              <img class="product-photo" src="images/DH-5.jpg" alt="Triangle Twist oorbellen 5">
+              <h3>Triangle Twist 05</h3>
+              <p class="price">€ 22,50</p>
+              <p>Handgemaakt met hoogwaardige Miyuki kralen.</p>
+            </article>
+
+            <article class="card">
+              <img class="product-photo" src="images/DH-6.jpg" alt="Triangle Twist oorbellen 6">
+              <h3>Triangle Twist 06</h3>
+              <p class="price">€ 22,50</p>
+              <p>Handgemaakt met hoogwaardige Miyuki kralen.</p>
+            </article>
+
+            <article class="card">
+              <img class="product-photo" src="images/DH-7.jpg" alt="Triangle Twist oorbellen 7">
+              <h3>Triangle Twist 07</h3>
+              <p class="price">€ 22,50</p>
+              <p>Handgemaakt met hoogwaardige Miyuki kralen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="band">
+        <div class="inner" id="workshops">
+          <div>
+            <div class="eyebrow">Creatief & gezellig</div>
+            <h2>Workshops</h2>
+            <p>
+              Ontdek hoe leuk het is om zelf met hoogwaardige kralen te werken.
+              Tijdens een workshop leer je stap voor stap verschillende technieken en maak je
+              eigen sieraad.
+            </p>
+            <a class="btn gold" href="#contact">Informeer naar een workshop</a>
+          </div>
+
+          <div>
+            <h3>Wat kun je verwachten?</h3>
+            <p>
+              Een ontspannen workshop in een kleine setting, waarbij je uitlegt en materiaal aanwezig is.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section id="over">
+        <div class="eyebrow">Het verhaal</div>
+        <h2>Over mij</h2>
+
+        <div class="contact">
+          <p>
+            Welkom bij Bead 'em. Vanuit liefde voor kralen, kleuren en handwerk ontstaan
+            sieraden die net even anders zijn.
+          </p>
+
+          <div class="card">
+            <h3>Volg Bead 'em</h3>
+            <p>Bekijk nieuwe creaties en inspiratie op Instagram.</p>
+            <a
+              class="btn"
+              href="https://www.instagram.com/bead_em_handgemaakte_sieraden/"
+              target="_blank"
+              rel="noopener"
+            >
+              Naar Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="service" id="service">
+        <div class="eyebrow">Klantenservice</div>
+        <h2>Veelgestelde vragen</h2>
+
+        <details>
+          <summary>Gebruikte materialen</summary>
+          <details>
+            <summary>Wat zijn Miyuki kralen?</summary>
+            <p>
+              Miyuki kralen zijn hoogwaardige glas-kralen die speciaal worden gebruikt voor
+              sieraden. Ze staan bekend om hun precisie, kleurvastheid en kwaliteit.
+            </p>
+          </details>
+        </details>
+      </section>
+
+      <section id="contact">
+        <div class="eyebrow">Neem contact op</div>
+        <h2>Contact</h2>
+
+        <div class="contact">
+          <div>
+            <p>
+              Heb je een vraag over een sieraad, bestelling of workshop? Stuur gerust een bericht.
+            </p>
+            <p>
+              <a href="mailto:beadem26@gmail.com">E-mail: beadem26@gmail.com</a>
+            </p>
+            <p>
+              <a
+                href="https://www.instagram.com/bead_em_handgemaakte_sieraden/"
+                target="_blank"
+                rel="noopener"
+              >
+                Instagram: @bead_em_handgemaakte_sieraden
+              </a>
+            </p>
+          </div>
+
+          <form onsubmit="sendMail(event)">
+            <input required id="name" placeholder="Naam">
+            <input required id="email" type="email" placeholder="E-mailadres">
+            <textarea required id="message" rows="5" placeholder="Bericht"></textarea>
+            <button class="btn" type="submit">Verstuur bericht</button>
+            <p id="msg" class="small"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>BEAD 'EM</strong>
+      <p class="small">Handgemaakte sieraden • Met aandacht gemaakt</p>
+      <p class="small">© <span id="year"></span> Bead 'em</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

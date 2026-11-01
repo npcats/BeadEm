@@ -1,6 +1,56 @@
-const categories=document.getElementById('categories');const earrings=document.getElementById('earrings');const triangle=document.getElementById('triangle');
-function showCategories(){categories.classList.remove('hidden');earrings.classList.add('hidden');triangle.classList.add('hidden');document.getElementById('shop').scrollIntoView()}
-function showEarrings(){categories.classList.add('hidden');earrings.classList.remove('hidden');triangle.classList.add('hidden');document.getElementById('shop').scrollIntoView()}
-function showTriangleTwist(){categories.classList.add('hidden');earrings.classList.add('hidden');triangle.classList.remove('hidden');document.getElementById('shop').scrollIntoView()}
-function sendMail(e){e.preventDefault();const n=document.getElementById('name').value;const f=document.getElementById('email').value;const m=document.getElementById('message').value;location.href='mailto:beadem26@gmail.com?subject='+encodeURIComponent('Bericht via Bead em website van '+n)+'&body='+encodeURIComponent('Naam: '+n+'\nE-mail: '+f+'\n\n'+m);document.getElementById('msg').textContent='Je e-mailprogramma wordt geopend.'}
-document.getElementById('year').textContent=new Date().getFullYear();
+const categories = document.getElementById('categories');
+const earrings = document.getElementById('earrings');
+const triangle = document.getElementById('triangle');
+
+function setShopSections({ showCategoriesSection, showEarringsSection, showTriangleSection }) {
+  categories.classList.toggle('hidden', !showCategoriesSection);
+  earrings.classList.toggle('hidden', !showEarringsSection);
+  triangle.classList.toggle('hidden', !showTriangleSection);
+
+  document.getElementById('shop').scrollIntoView();
+}
+
+function showCategories() {
+  setShopSections({
+    showCategoriesSection: true,
+    showEarringsSection: false,
+    showTriangleSection: false,
+  });
+}
+
+function showEarrings() {
+  setShopSections({
+    showCategoriesSection: false,
+    showEarringsSection: true,
+    showTriangleSection: false,
+  });
+}
+
+function showTriangleTwist() {
+  setShopSections({
+    showCategoriesSection: false,
+    showEarringsSection: false,
+    showTriangleSection: true,
+  });
+}
+
+function sendMail(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !message) {
+    return;
+  }
+
+  const subject = encodeURIComponent('Vraag via website');
+  const body = encodeURIComponent(
+    `Naam: ${name}\nE-mail: ${email}\n\nBericht:\n${message}`
+  );
+
+  location.href = `mailto:beadem26@gmail.com?subject=${subject}&body=${body}`;
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
