@@ -115,8 +115,7 @@ h3 {
   display: inline-block;
   border: 0;
   background: var(--wine);
-  color: white;
-  text-decoration: none;
+  color: #ffffff;
   padding: 12px 20px;
   margin: 6px 5px;
   border-radius: 2px;
