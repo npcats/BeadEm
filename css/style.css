@@ -255,6 +255,35 @@ textarea {
   color: inherit;
 }
 
+.repair-band {
+    max-width: none;
+    background: #7a5360;
+    color: #fff;
+}
+
+.repair-inner {
+    max-width: 1120px;
+    margin: auto;
+    padding: 70px 24px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+}
+
+.repair-band h2,
+.repair-band h3 {
+    color: #fff;
+}
+
+.repair-band .eyebrow {
+    color: #e3bd82;
+}
+
+.repair-btn {
+    background: #d3a45c;
+    color: #291b19;
+}
+
 @media (max-width: 760px) {
   .menu {
     display: block;
@@ -278,7 +307,8 @@ textarea {
 
   .grid,
   .contact,
-  .band .inner {
+  .band .inner 
+  .repair-inner {
     grid-template-columns: 1fr;
   }
 
