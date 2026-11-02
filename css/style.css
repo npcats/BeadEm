@@ -292,8 +292,8 @@ textarea {
     color: #291b19;
 }
 
-.instagram-btn {
-    color: #ffffff;
+a.btn.instagram-btn {
+    color: #ffffff !important;
 }
 
 @media (max-width: 760px) {
