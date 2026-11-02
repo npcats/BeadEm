@@ -133,6 +133,15 @@ h3 {
   color: #291b19;
 }
 
+a.btn {
+    color: #ffffff;
+}
+
+a.btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
