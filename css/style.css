@@ -53,10 +53,6 @@ nav {
   object-fit: contain;
   display: block;
 
-.brand span {
-  white-space: nowrap;
-}
-
 .links {
   margin-left: auto;
   display: flex;
