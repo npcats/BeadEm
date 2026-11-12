@@ -302,21 +302,7 @@ a.btn.instagram-btn {
     color: #ffffff !important;
 }
 
-@media (max-width: 760px) 
-  
-{
-  .brand-logosmall {
-    width: 42px;
-    height: 42px;
-  }
-
-  .brand {
-    gap: 7px;
-  }
-}
-
-  
-  {
+@media (max-width: 760px)  {
   .menu {
     display: block;
     margin-left: auto;
