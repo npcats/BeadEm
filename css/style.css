@@ -41,6 +41,9 @@ nav {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font: 700 27px Georgia, serif;
   color: var(--wine);
   text-decoration: none;
@@ -87,6 +90,12 @@ main > section,
   max-width: 100%;
   height: auto;
   margin: 0 auto 20px;
+}
+
+.brand-logo {
+  height: 32px;
+  width: auto;
+  margin: -4px 0;
 }
 
 .eyebrow {
