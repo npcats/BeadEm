@@ -241,6 +241,14 @@ a.btn:hover {
   gap: 40px;
 }
 
+.about-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 0 20px;
+}
+
 .contact a {
   color: var(--wine);
 }
