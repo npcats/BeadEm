@@ -82,6 +82,13 @@ main > section,
   max-width: 760px;
 }
 
+.hero h1 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 3px;
