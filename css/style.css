@@ -47,12 +47,6 @@ nav {
   letter-spacing: 1px;
 }
 
-.brand-logosmall {
-  width:12px;
-  height: 12px;
-  object-fit: contain;
-  display: block;
-
 .links {
   margin-left: auto;
   display: flex;
