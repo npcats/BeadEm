@@ -44,10 +44,10 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font: 700 27px Georgia, serif;
-  color: var(--wine);
+  font: 500 30px "Bodoni Moda", "Didot", "Bodoni MT", Georgia, serif;
+  color: #1c2a1f;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 
 .links {
