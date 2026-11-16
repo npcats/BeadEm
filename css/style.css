@@ -253,6 +253,10 @@ a.btn:hover {
   color: var(--wine);
 }
 
+.contact > .card {
+  align-self: start;
+}
+
 details {
   background: #fff;
   padding: 15px 18px;
