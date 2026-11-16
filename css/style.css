@@ -347,9 +347,20 @@ a.btn.instagram-btn {
 
   .grid,
   .contact,
-  .band .inner 
+  .band .inner,
   .repair-inner {
     grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .band .inner > div,
+  .repair-inner > div {
+    min-width: 0;
+  }
+
+  .repair-band {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   h1 {
